@@ -33,14 +33,17 @@
   },
   "jest": {
     "preset": "react-native",
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
     "setupFiles": [
       "<rootDir>/config/setupTests.js"
-    ]
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!react-native)/.+"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
   }
 }

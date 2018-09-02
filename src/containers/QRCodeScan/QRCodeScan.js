@@ -10,16 +10,16 @@
 import { withHandlers, withState, compose } from 'recompose';
 import Ui from './Ui';
 
+export const onBarCodeRead = props => data => {
+  const { setShowCamera, showCamera } = props;
+
+  alert(data.data);
+  setShowCamera(!showCamera);
+};
+
 const QRCodeScan = compose(
   withState('showCamera', 'setShowCamera', false),
-  withHandlers({
-    onBarCodeRead: props => data => {
-      const { setShowCamera, showCamera } = props;
-
-      alert(data.data);
-      setShowCamera(!showCamera);
-    }
-  })
+  withHandlers({ onBarCodeRead })
 );
 
 export default QRCodeScan(Ui);

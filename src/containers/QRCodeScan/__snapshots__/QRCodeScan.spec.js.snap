@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QRCodeScan should render correctly 1`] = `
+<Ui
+  onBarCodeRead={[Function]}
+  setShowCamera={[Function]}
+  showCamera={false}
+/>
+`;
