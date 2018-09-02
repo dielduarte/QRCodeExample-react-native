@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
 import QRCodeScan from './containers/QRCodeScan';
 import QRCodeDecoder from './containers/QRCodeDecoder';
 
