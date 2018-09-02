@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import QRCodeScan from './containers/QRCodeScan';
+import QRCodeDecoder from './containers/QRCodeDecoder';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>hey</Text>
+      <QRCodeScan />
+      <QRCodeDecoder />
     </View>
   );
 };
