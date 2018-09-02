@@ -1,3 +1,10 @@
+/**
+ * The Camera component is just to encapsulate react-native-camera
+ * if we decide to remove react-native-camera and use another lib or create
+ * our own lib, we'll need change only the camera component instead of a lot of parts
+ * of the the code.
+ */
+
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { RNCamera } from 'react-native-camera';
