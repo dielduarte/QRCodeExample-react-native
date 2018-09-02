@@ -1,7 +1,7 @@
 /**
  * The decision to create this button component,
  * was just to simulate a real design/style guide
- * where we'll have buttons and other primitive components
+ * where we'll have buttons and others primitive components
  * and we using the primitive components of react-native
  * to create it..
  */
