@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QRCodeDecoder tests should render correctly 1`] = `
+<withHandlers(Ui)
+  setSource={[Function]}
+  source=""
+/>
+`;
