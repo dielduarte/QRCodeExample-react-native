@@ -3,7 +3,7 @@
  * was just to simulate a real design/style guide
  * where we'll have buttons and other primitive components
  * and we using the primitive components of react-native
- * to create they..
+ * to create it..
  */
 import React from 'react';
 import { Button as Btn } from 'react-native';
