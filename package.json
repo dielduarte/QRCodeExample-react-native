@@ -8,9 +8,9 @@
     "test:watch": "npm test -- --watch"
   },
   "dependencies": {
-    "babel-plugin-module-resolver": "^3.1.1",
     "prop-types": "^15.6.2",
     "react": "16.4.1",
+    "react-dom": "^16.4.2",
     "react-native": "0.56.0",
     "react-native-camera": "^1.2.0",
     "react-native-image-picker": "^0.26.10",
@@ -27,9 +27,7 @@
     "enzyme-to-json": "^3.3.4",
     "jest": "23.5.0",
     "jest-serializer-enzyme": "^1.0.0",
-    "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.4.2",
-    "react-test-renderer": "^16.4.2"
+    "react-addons-test-utils": "^15.6.2"
   },
   "jest": {
     "preset": "react-native",
