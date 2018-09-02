@@ -2,18 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import ImagePicker from 'react-native-image-picker';
 
+ImagePicker.showImagePicker = jest.fn();
+
 import QRCodeDecoder, { getMimeType, isUriValid, imagePickerCallBack } from './QRCodeDecoder';
 
 describe('QRCodeDecoder', () => {
   it('should render correctly', () => {
     const component = shallow(<QRCodeDecoder />).dive();
     expect(component).toMatchSnapshot();
-  });
-
-  it('should call ImagePicker.showImagePicker when showImagePicker prop is called', () => {
-    const component = shallow(<QRCodeDecoder />).dive();
-    component.props().showImagePicker();
-    expect(ImagePicker.showImagePicker).toHaveBeenCalledTimes(1);
   });
 
   describe('imagePickerCallBack', () => {
@@ -61,5 +57,11 @@ describe('QRCodeDecoder', () => {
     it(`should return false if uri passed haven't extension`, () => {
       expect(isUriValid('path-to-image')).toBeFalsy();
     });
+  });
+
+  it('should call ImagePicker.showImagePicker when showImagePicker prop is called', () => {
+    const component = shallow(<QRCodeDecoder />).dive();
+    component.props().showImagePicker();
+    expect(ImagePicker.showImagePicker).toHaveBeenCalled();
   });
 });

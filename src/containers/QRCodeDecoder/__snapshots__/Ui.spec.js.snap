@@ -6,6 +6,10 @@ exports[`QRCodeDecoder Ui should render correctly 1`] = `
     onPress={[Function]}
     title="Scan from gallery"
   />
-  <QRdecoder />
+  <QRdecoder
+    onError={[Function]}
+    onSuccess={[Function]}
+    src={null}
+  />
 </Fragment>
 `;
