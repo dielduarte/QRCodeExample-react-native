@@ -23,12 +23,14 @@ const getMimeType = uri => {
     '.gif': 'gif'
   };
 
-  return `image/${mimeTypeExts[ext]}`;
+  const mimetype = mimeTypeExts[ext];
+
+  return mimetype ? `image/${mimetype}` : false;
 };
 
 const isUriValid = uri => uri.lastIndexOf('.') > 0;
 
-const onImagePickerCallBack = (props, response) => {
+const imagePickerCallBack = (props, response) => {
   if (response.didCancel) return;
 
   if (response.error) {
@@ -52,7 +54,7 @@ const QRCodeDecoder = compose(
   withState('source', 'setSource', ''),
   withHandlers({
     showImagePicker: props => () => {
-      ImagePicker.showImagePicker(response => onImagePickerCallBack(props, response));
+      ImagePicker.showImagePicker(response => imagePickerCallBack(props, response));
     },
     onSuccess: () => data => {
       alert(data);
