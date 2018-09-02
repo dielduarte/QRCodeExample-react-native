@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`QRCodeDecoder tests should render correctly 1`] = `
-<withHandlers(Ui)
+exports[`QRCodeDecoder should render correctly 1`] = `
+<Ui
+  onError={[Function]}
+  onSuccess={[Function]}
   setSource={[Function]}
+  showImagePicker={[Function]}
   source=""
 />
 `;

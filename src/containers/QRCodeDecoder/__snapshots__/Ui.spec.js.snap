@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QRCodeDecoder Ui should render correctly 1`] = `
+<Fragment>
+  <Button
+    onPress={[Function]}
+    title="Scan from gallery"
+  />
+  <QRdecoder />
+</Fragment>
+`;

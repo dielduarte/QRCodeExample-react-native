@@ -12,7 +12,7 @@ import ImagePicker from 'react-native-image-picker';
 
 import Ui from './Ui';
 
-const getMimeType = uri => {
+export const getMimeType = uri => {
   const ext = uri.substr(uri.lastIndexOf('.')).toLowerCase();
 
   const mimeTypeExts = {
@@ -28,9 +28,9 @@ const getMimeType = uri => {
   return mimetype ? `image/${mimetype}` : false;
 };
 
-const isUriValid = uri => uri.lastIndexOf('.') > 0;
+export const isUriValid = uri => uri.lastIndexOf('.') > 0;
 
-const imagePickerCallBack = (props, response) => {
+export const imagePickerCallBack = (props, response) => {
   if (response.didCancel) return;
 
   if (response.error) {
