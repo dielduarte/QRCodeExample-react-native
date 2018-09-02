@@ -6,11 +6,11 @@
  * to create they..
  */
 import React from 'react';
-import { Button } from 'react-native';
+import { Button as Btn } from 'react-native';
 import PropTypes from 'prop-types';
 
 const Button = ({ title, onPress }) => {
-  return <Button onPress={onPress} title={title} />;
+  return <Btn onPress={onPress} title={title} />;
 };
 
 Button.defaultProps = {
